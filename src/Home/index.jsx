@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css';
 import marijuana from "../assets/marijuana.jpg";
-
+import { Link } from 'react-router-dom';
 const Media = () => {
     return (
         <>
@@ -31,9 +31,12 @@ const Media = () => {
                         </h4>
                     </div>
                 </div>
+                <div className={`${styles.MediaContent}`}>
+                    <Link to="/about">About This</Link>
+                </div>
             </div>
         </>
-    )
+    )   
 }
 
 const App = () => (

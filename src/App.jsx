@@ -1,11 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router, Switch } from "react-router-dom";
 import RouterRoutes from "./routes";
 
 const App = () => {
     return (
-        <Router>
-            <RouterRoutes />
+        <Router basename='/'>
+            <Switch>
+                <RouterRoutes />
+            </Switch>
         </Router>
     );
 }

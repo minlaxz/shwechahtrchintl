@@ -60,3 +60,9 @@ div > p {
   color: #555500;
   font-weight: bolder;
 }
+
+div > a {
+  font-size: 0.85em;
+  text-decoration: underline;
+  color: cadetblue;
+}

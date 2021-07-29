@@ -3,9 +3,11 @@ import styles from './Home.module.css';
 import marijuana from "../assets/marijuana.jpg";
 import { Link } from 'react-router-dom';
 const Media = () => {
+    React.useEffect(() => {
+        document.title = 's.c.h.c.t | marijuana'
+    },[]);
     return (
         <>
-
             <div className={`${styles.MediaContainer}`}>
                 <div className={`${styles.MediaContent}`}>
                     <p> ရွှေချထားချင်တယ်။ </p>

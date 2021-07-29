@@ -8,7 +8,7 @@ const About = () => {
     const [commitDate, setCommitDate] = React.useState(null);
 
     React.useEffect(() => {
-        document.title = 's.c.h.c.t | about'
+        document.title = 's.c.h.c.t | about 🤷‍♀️'
         const fetchCommitSha = async () => {
             const commitsOnMain = await axios('https://api.github.com/repos/minlaxz/shwechahtrchintl/branches/main')
             setCommitSha(commitsOnMain.data.commit.sha)
@@ -20,25 +20,29 @@ const About = () => {
     return (
         <>
             <div className={`${styles.root_container}`}>
-                <h2 className="cyan-text">Hello, weed!</h2>
+                <h2 className="cyan-text">Hello, weed! 🥴</h2>
                 <code className="gold-text">ရွှေချထားချင်တယ်။ 🤪</code>
                 <p className="white-text"> Here is the
+                    <a href="https://github.com/minlaxz/shwechahtrchintl" rel="noreferrer noopener" target="_blank"
+                        class="source-text"> Source Code
+                    </a> or
                     <a href="https://github.com/minlaxz/shwechahtrchintl#readme" rel="noreferrer noopener" target="_blank"
-                        class="source-text"> Source Code or Documentation
+                        class="source-text"> Documentation
                     </a>
+
                 </p>
-                <small> sha : 
+                <code> last sha : 
                     {
                         commitSha ? 
                         `${commitSha}` : 'Fetching last commit SHA, please weed...'
                     }
-                </small>
-                <small> date : 
+                </code>
+                <code> last commit date : 
                     {
                         commitDate ? `${commitDate}` : 'Fetching last commit date, please weed...'
                     }
-                </small>
-                {commitSha && <a a href={`https://github.com/minlaxz/shwechahtrchintl/commit/${commitSha}`} target="_blank" rel="noreferrer noopener">check the branch</a>}
+                </code>
+                {commitSha && <a a href={`https://github.com/minlaxz/shwechahtrchintl/commit/${commitSha}`} target="_blank" rel="noreferrer noopener">WTF is goin' on @sha</a>}
                 <br></br>
                 <Link to="/">Go back to Home 🏠</Link>
             </div>

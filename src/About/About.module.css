@@ -28,3 +28,13 @@
     color: #a7a7a7;
     text-decoration: underline;
 }
+
+code {
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+    code {
+        font-size: 0.55em;
+    }
+}

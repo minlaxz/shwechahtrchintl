@@ -20,8 +20,30 @@ const About = () => {
     return (
         <>
             <div className={`${styles.root_container}`}>
-                <h2 className="cyan-text">Hello, weed! 🥴</h2>
+                <h3>Hello, weed! 🥴</h3>
                 <p className="gold-text">ရွှေချထားချင်တယ်။ 🤪</p>
+                <p className="white-text"> Here is the
+                    <a href="https://github.com/minlaxz/shwechahtrchintl" rel="noreferrer noopener" target="_blank"
+                        class="source-text"> Source Code
+                    </a> or
+                    <a href="https://github.com/minlaxz/shwechahtrchintl#readme" rel="noreferrer noopener" target="_blank"
+                        class="source-text"> Documentation
+                    </a>
+
+                </p>
+                {commitSha && <a a href={`https://github.com/minlaxz/shwechahtrchintl/commit/${commitSha}`} target="_blank" rel="noreferrer noopener">check@commitSha</a>}
+                <code> last commit date :
+                    {
+                        commitDate ? `${commitDate}` : 'Fetching last commit date, please weed...'
+                    }
+                </code>
+                <code> sha :
+                    {
+                        commitSha ?
+                            `${commitSha}` : 'Fetching last commit SHA, please weed...'
+                    }
+                </code>
+                <Link to="/">This is complicated 🥴, just go back to Home 🏠</Link>
                 <div>
                     <ul>
                         <li>Created by <a href="https://minlaxz.me" rel="noreferrer noopener" target="_blank">minlaxz</a> and used...</li>
@@ -35,31 +57,9 @@ const About = () => {
                         <li><a rel="noreferrer noopener" target="_blank" href="https://pages.github.com/">Github Pages</a> for serving static files</li>
                         <li><a rel="noreferrer noopener" target="_blank" href="https://docs.github.com/en/actions/learn-github-actions">Github Actions</a> for automated CI</li>
                         <li><a rel="noreferrer noopener" target="_blank" href="https://reactrouter.com/web/api/HashRouter">HashRouter</a> for frontend routing like GH Pages</li>
+                        <hr/>
                     </ul>
                 </div>
-                <p className="white-text"> Here is the
-                    <a href="https://github.com/minlaxz/shwechahtrchintl" rel="noreferrer noopener" target="_blank"
-                        class="source-text"> Source Code
-                    </a> or
-                    <a href="https://github.com/minlaxz/shwechahtrchintl#readme" rel="noreferrer noopener" target="_blank"
-                        class="source-text"> Documentation
-                    </a>
-
-                </p>
-                <code> sha :
-                    {
-                        commitSha ?
-                            `${commitSha}` : 'Fetching last commit SHA, please weed...'
-                    }
-                </code>
-                <code> last commit date :
-                    {
-                        commitDate ? `${commitDate}` : 'Fetching last commit date, please weed...'
-                    }
-                </code>
-                {commitSha && <a a href={`https://github.com/minlaxz/shwechahtrchintl/commit/${commitSha}`} target="_blank" rel="noreferrer noopener">WTF is goin' on @sha</a>}
-                <br></br>
-                <Link to="/">This is complicated 🥴, just go back to Home 🏠</Link>
             </div>
 
         </>

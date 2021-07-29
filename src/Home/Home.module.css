@@ -46,7 +46,8 @@
   }
 }
 
-p, h4 {
+p,
+h4 {
   text-align: center;
 }
 
@@ -56,6 +57,6 @@ div > h4 {
 }
 
 div > p {
-  color:#555500;
+  color: #555500;
   font-weight: bolder;
 }

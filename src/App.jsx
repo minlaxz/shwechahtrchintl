@@ -1,40 +1,42 @@
-import React from 'react'
-import styles from './App.module.css'
+import React from 'react';
+import styles from './App.module.css';
+import me from "./assets/marijuana.jpg";
 
 const Media = () => {
   return (
-    <div className={`${styles.MediaContainer}`}>
-      <div className={`${styles.MediaContent}`}>
-      If you want to live a happy life, tie it to a goal, not to people or things.
+    <>
+      {/* <p style={{ position: "absolute", marginLeft:"50vw", color:"#555500", fontWeight:"bolder" }}> Flex Container</p> */}
+      <div className={`${styles.MediaContainer}`}>
+
+        <div className={`${styles.MediaContent} ${styles.childImage}`}>
+          <img
+            className={`${styles.imageControls}`}
+            src={me}
+            alt=""
+            draggable={false}
+          />
+        </div>
+        <div className={`${styles.MediaContent} ${styles.childText}`}>
+          <p>
+            When you smoke the herb, it reveals you to yourslef.
+          </p>
+          <div>
+            <h4>
+              Inhale. Hole it.
+            </h4>
+            <h4>
+              Exhale.Smile.
+            </h4>
+          </div>
+        </div>
+
       </div>
-      <div className={`${styles.MediaContent}`}>
-        Your time is limited, so don’t waste it living someone else’s life. 
-        Don’t be trapped by dogma – which is living with the results of other people’s thinking.
-      </div>
-      <div className={`${styles.MediaContent}`}>
-      Everybody wants to be famous, 
-      but nobody wants to do the work. I live by that. 
-      You grind hard so you can play hard. 
-      At the end of the day, you put all the work in, and eventually it’ll pay off. 
-      It could be in a year, it could be in 30 years. 
-      Eventually, your hard work will pay off.
-      </div>
-    </div>
+    </>
   )
 }
 
-const App = () => {
-
-  return (
-    // <ul className={`${styles.ul}`}>
-    //   <li className={`${styles.o1}`}>One</li>
-    //   <li>Two</li>
-    //   <li>Threeeeeeeeee</li>
-    //   <li>Four</li>
-    //   <li>Five</li>
-    // </ul>
-    <Media />
-  )
-}
+const App = () => (
+  <Media />
+)
 
 export default App

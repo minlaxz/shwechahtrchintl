@@ -1,14 +1,12 @@
 import React from 'react';
-import { HashRouter as Router, Switch } from "react-router-dom";
-import RouterRoutes from "./routes";
+import { HashRouter } from "react-router-dom";
+import SwitchedRoutes from './routes';
 
 const App = () => {
     return (
-        <Router basename='/'>
-            <Switch>
-                <RouterRoutes />
-            </Switch>
-        </Router>
+        <HashRouter basename='project/'>
+            <SwitchedRoutes />
+        </HashRouter>
     );
 }
 

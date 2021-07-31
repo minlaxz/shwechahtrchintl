@@ -1,14 +1,11 @@
 import React from 'react';
-import styles from './Home.module.css';
-import myGF from "../assets/my-gf.jpg";
-import myGFsvg from "../assets/my-gf.svg";
+import styles from './FirstVersion.module.css';
+import marijuana from '../assets/marijuana.jpg';
 import { Link } from 'react-router-dom';
-const Media = () => {
+const MediaBak = () => {
     React.useEffect(() => {
         document.title = 's.c.h.c.t | marijuana 🤪'
     }, []);
-
-    const [img, setImg] = React.useState(myGFsvg);
 
     return (
         <>
@@ -17,15 +14,11 @@ const Media = () => {
                     <p> ရွှေချထားချင်တယ်။ 🤪 </p>
                 </div>
                 <div className={`${styles.MediaContent} ${styles.childImage}`}>
-                    <small>click on image 🙃</small>
                     <img
                         className={`${styles.imageControls}`}
-                        src={img}
-                        alt="marijuana girlfriend"
+                        src={marijuana}
+                        alt="marijuana"
                         draggable={false}
-                        onClick={() => {
-                            img === myGFsvg ? setImg(myGF) : setImg(myGFsvg);
-                        }}
                     />
                 </div>
                 <div className={`${styles.MediaContent} ${styles.childText}`}>
@@ -42,18 +35,19 @@ const Media = () => {
                     </div>
                 </div>
                 <div className={`${styles.MediaContent}`}>
-                    <Link to="/firstversion">First version of this page</Link>
+                    <Link to="/">Home 🏠</Link>
                 </div>
                 <div className={`${styles.MediaContent}`}>
                     <Link to="/about">About This 🤷</Link>
                 </div>
+                
             </div>
         </>
     )
 }
 
 const App = () => (
-    <Media />
+    <MediaBak />
 )
 
 export default App

@@ -36,7 +36,7 @@ p > a {
 }
 @media only screen and (max-width: 767px) {
     .root_container{
-        height: 95vh;
+        height: 100vh;
         justify-content: space-evenly;
     }
     code {

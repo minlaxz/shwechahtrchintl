@@ -21,6 +21,18 @@ const About = () => {
         <>
             <div className={`${styles.root_container}`}>
                 <h3>Hello, weed! 🥴</h3>
+                <small>
+                    This is also avaiable on &nbsp;
+                    {
+                        window.location.hostname === 'shwechahtrchintl.ml' ?
+                            <span>
+                                <a rel="noreferrer noopener" target="_blank" href="https://shwechahtrchintl.pages.dev">Cloudflare Pages</a>
+                            </span> :
+                            <span>
+                                <a rel="noreferrer noopener" target="_blank" href="https://shwechahtrchintl.ml"> Github Pages</a>
+                            </span>
+                    }
+                </small>
                 <p className="gold-text">ရွှေချထားချင်တယ်။ 🤪</p>
                 <p className="white-text"> Here is the
                     <a href="https://github.com/minlaxz/shwechahtrchintl" rel="noreferrer noopener" target="_blank"
@@ -57,11 +69,7 @@ const About = () => {
                         <li><a rel="noreferrer noopener" target="_blank" href="https://pages.github.com/">Github Pages</a> for serving static files</li>
                         <li><a rel="noreferrer noopener" target="_blank" href="https://docs.github.com/en/actions/learn-github-actions">Github Actions</a> for automated CI</li>
                         <li><a rel="noreferrer noopener" target="_blank" href="https://reactrouter.com/web/api/HashRouter">HashRouter</a> for frontend routing like GH Pages</li>
-                        <li>This is also avaiable on &nbsp;
-                        <a rel="noreferrer noopener" target="_blank" href="https://shwechahtrchintl.pages.dev">Cloudflare Pages</a> &
-                        <a rel="noreferrer noopener" target="_blank" href="https://shwechahtrchintl.ml"> Github Pages</a>
-                        </li>
-                        <hr/>
+                        <hr />
                     </ul>
                 </div>
             </div>

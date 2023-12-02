@@ -18,9 +18,9 @@ In Myanmar language => ရွှေချထားချင်တယ် <= [if y
 
 ### How did I do?
 - ~Get a domain from Freenom (used a US fake address) to avoid "the technical issues" of Freenom 😐~
-- Grt a domain
-- Update Cloudflare NS in Freenom (Freenom part is done close the tab 🤣)
-- Add Github custom domain IP as `A` records in Cloudflare DNS records.
+- Get a domain name, NameCheap is use to cheaper than others
+- Update Cloudflare NS in Your Domain Provider (Domain name part is done close the tab 🤣)
+- Add Github custom domain IP as `A` records in DNS records.
 ```
 A 185.199.108.153 shwechahtrchintl.gh.minlaxz.lol DNS_ONYL
 A 185.199.109.153 shwechahtrchintl.gh.minlaxz.lol DNS_ONYL

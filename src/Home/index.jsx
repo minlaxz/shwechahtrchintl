@@ -34,10 +34,10 @@ const Media = () => {
                     </p>
                     <div>
                         <h4>
-                            Inhale. Hole it.
+                            Inhale. Hold it.
                         </h4>
                         <h4>
-                            Exhale.Smile.
+                            Exhale. And smile.
                         </h4>
                     </div>
                 </div>
